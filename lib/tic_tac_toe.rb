@@ -80,7 +80,6 @@ class TicTacToe
     end
   end
   
-  
   def draw?(board = @board)
     full?(board) && !won?(board)
   end
