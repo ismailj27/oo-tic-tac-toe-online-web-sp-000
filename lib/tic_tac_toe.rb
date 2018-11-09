@@ -13,7 +13,7 @@ class TicTacToe
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
   
-  def move(board = @board, index, token = "X")
+  def move(index, token = "X")
     @board[index] = token
   end
   
