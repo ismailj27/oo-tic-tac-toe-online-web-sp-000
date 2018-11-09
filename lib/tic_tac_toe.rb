@@ -34,7 +34,7 @@ class TicTacToe
     end
   end
   
-  def turn(board = @board, index)
+  def turn(index)
     puts "Please enter 1-9:"
     input = gets.strip
     index = input_to_index(input)
@@ -42,7 +42,7 @@ class TicTacToe
       move(@board, index, token)
       display_board(@board)
     else
-      turn(board = @board)
+      turn(@board)
     end
   end
   
